@@ -1,90 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body and General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f0; /* Fondo claro similar al de la imagen */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
 }
 
 header .logo {
-    width: 50px;
-    height: auto;
+    max-height: 60px;
 }
 
 header h1 {
-    margin: 0;
-    flex-grow: 1;
-    text-align: center;
+    font-size: 1.5rem;
+    color: #1f4d38; /* Verde oscuro para el texto principal */
+    margin-left: 10px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #1f4d38;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #093824; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Hero Section */
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-iframe {
-    border: none;
-    width: 100%;
+main iframe {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
     max-width: 600px;
     height: 400px;
 }
 
+/* Footer */
 footer {
-    width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-}
-
-footer p {
-    margin: 5px 0;
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.9rem;
 }
 
 footer a {
-    color: #ffcc00;
+    color: #1f4d38;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #093824;
+}
+
+/* Custom Hero Banner Styling */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.hero-banner-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero-banner-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f4d38;
+    margin-bottom: 20px;
+}
+
+.hero-banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero-banner-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-banner-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
