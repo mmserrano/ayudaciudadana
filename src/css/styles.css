@@ -1,4 +1,4 @@
-/* This file is intentionally left blank. */body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,29 +6,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 header .logo {
-    position: absolute;
-    left: 10px;
     width: 50px;
     height: auto;
 }
 
 header h1 {
     margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main {
@@ -36,8 +55,36 @@ main {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 iframe {
     border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
