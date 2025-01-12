@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda CiudaDANA</title>
+    <title>Ayuda Ciudadana</title>
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
@@ -19,12 +19,19 @@
     </header>
 
     <main>
-        <iframe src="https://www.taskade.com/a/01JHE488VGVVEKTC3DJAJVX80W" frameborder="0" allowfullscreen></iframe>
+        <div id="taskade-embed"></div>
     </main>
+
     <footer>
         <p>&copy; 2025 Ayuda CiudaDANA. Todos los derechos reservados.</p>
         <p><a href="privacy.html">Política de Privacidad</a></p>
     </footer>
     <script src="src/js/scripts.js"></script>
+    <script src="https://assets.taskade.com/embeds/latest/embed.iife.js"></script>
+    <script>
+        TaskadeEmbed.AgentPublicChatPopup.init({
+            publicAgentId: '01JHE488VGVVEKTC3DJAJVX80W',
+        });
+    </script>
 </body>
 </html>
