@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -55,7 +55,7 @@ nav ul li a:hover {
 /* Hero Section */
 main {
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 10px;
 }
 
 main iframe {
