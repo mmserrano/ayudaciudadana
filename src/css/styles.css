@@ -34,7 +34,7 @@ header h1 {
 }
 
 h4 {
-    font-size: 0.9rem; /* Ajusta el tamaño según tus necesidades */
+    font-size: 1.2rem; /* Ajusta el tamaño según tus necesidades */
 }
 
 nav ul {
@@ -67,7 +67,7 @@ main {
     background-color: #f9f9f0;
     padding: 20px; 
     color: #002244;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     min-height: 640px;
 }
 
@@ -77,11 +77,52 @@ main {
 
 .chatbot {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f0;
 }
+
+.iframe-container {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 56.25%; /* Aspect ratio para mantener el iframe responsivo */
+    overflow:hidden;
+    min-height: 400px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border:none;
+    padding:4px;
+    background:#f9f9f9;
+    min-height: 400px;
+}
+
+.iframe-container .override-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    min-height: 120px;
+    z-index: 2;
+    background:  #f9f9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem; 
+}
+
 
 .doc {
     width: 100%;
@@ -137,8 +178,21 @@ footer a:hover {
     }
     .chatbot {
         height: 85vh;
+        min-height: 500px;
     }
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+    .chatbot {
+        height: 80vh;
+        min-height: 450px;
+    }
+}
+
 /* Media query to hide elements on desktop */
 @media (min-width: 769px) {
     .mobile {
