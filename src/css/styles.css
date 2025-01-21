@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 10px;
-    background-color: #f9f9f0;
-    color: #042287;
+    background-color: #ffffff;
+    color: #3A65BD;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,8 +14,8 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #f9f9f0;
-    color: #042287;
+    background-color: #3A65BD;
+    color: #3A65BD;
     padding: 10px 10px;
     box-sizing: border-box;
 }
@@ -27,10 +27,10 @@ header .logo {
 
 header h1 {
     margin: 0;
-    flex-grow: 1;
-    padding-left: 20%;
     text-align:left;
     font-weight: bold;
+    font-size:xx-large;
+    color: #ffffff;
 }
 
 h4 {
@@ -50,23 +50,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #042287;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size:medium;
 }
 
 main {
     flex-grow: 1;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f9f9f0;
+    background-color: #ffffff;
     overflow-y: auto;
 }
 
 .banner {
-    background-color: #f9f9f0;
+    background-color: #ffffff;
     padding: 20px; 
-    color: #002244;
+    color: #3A65BD;
     font-size: 1.0rem;
 }
 
@@ -79,51 +80,32 @@ main {
     height: 90vh;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f0;
+    background-color: #ffffff;
     min-height: 400px;
 }
 
 .iframe-container {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100%;
+    min-height: 400px;
     padding-bottom: 56.25%; /* Aspect ratio para mantener el iframe responsivo */
     overflow:hidden;
-    min-height: 400px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    align-items: center;
 }
 
 .iframe-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
     border:none;
-    padding:4px;
-    background:#f9f9f9;
-    min-height: 400px;
+    overflow: hidden;
 }
 
-.iframe-container .override-iframe {
-    position: absolute;
-    width: 100%;
-    height: fit-content;
-    min-height: 120px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    box-sizing: border-box;
-    background:  #ffffff;
-    padding: 20px 50px;
-}
 
 .text {
-    color: #042287;
+    color: #3A65BD;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.0rem; 
@@ -133,30 +115,28 @@ main {
 .doc {
     width: 100%;
     height: 75vh;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f0;
+    background-color: #ffffff;
 }
 
 .gfm-embed {
-    background-color: #f9f9f0;
+    background-color: #ffffff;
     max-height: fit-content;
     border:none;
     width:100%;
     padding:4px;
-    background:#f9f9f9;
+    background:#ffffff;
     height:100%;
 }
 
 footer {
     width: 100%;
-    background-color: #f9f9f0;
-    color: #042287;
+    background-color: #3A65BD;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0px;
     position: relative;
     bottom: 0;
-    border-top: 1px solid #ddd;
 }
 
 footer p {
@@ -164,7 +144,7 @@ footer p {
 }
 
 footer a {
-    color: #042287;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -215,6 +195,9 @@ footer a:hover {
         display: grid;
         grid-template-columns: repeat(2, auto); /* Dos columnas */
         gap: 10px;
+    }
+    .iframe-container {
+        min-height: 660px;
     }
 }
 
