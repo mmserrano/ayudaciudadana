@@ -1,3 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +23,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     background-color: #3A65BD;
     color: #3A65BD;
     padding: 10px 10px;
@@ -81,14 +90,14 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #ffffff;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .iframe-container {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 400px;
+    min-height: 600px;
     padding-bottom: 56.25%; /* Aspect ratio para mantener el iframe responsivo */
     overflow:hidden;
     align-items: center;
@@ -130,7 +139,6 @@ main {
 }
 
 footer {
-    width: 100%;
     background-color: #3A65BD;
     color: #ffffff;
     text-align: center;
