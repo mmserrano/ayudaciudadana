@@ -15,57 +15,62 @@
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item desktop"><a class="nav-link" href="info.html">Más información</a></li>
-                    <li class="nav-item mobile"><a class="nav-link" href="apoyar.html">Apoyar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">¿Cómo funciona?</a></li>
+                    <!--<li class="nav-item mobile"><a class="nav-link" href="apoyar.html">Apoyar</a></li>-->
                     <!--<li class="nav-item desktop"><a class="nav-link" target="_blanc" href="https://docs.google.com/forms/d/e/1FAIpQLSfA8-1fHoUd4fayLYDmZsV1x6l9KceE4DXKJ8zA0-10I_GkFQ/viewform?usp=sf_link">Encuesta de satisfacción</a></li>-->
-                    <li class="nav-item"><a class="nav-link" href="mailto:ayudaciudadana.ia@gmail.com">Contacto</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="mailto:ayudaciudadana.ia@gmail.com">Contacto</a></li>-->
                 </ul>
             </nav>
         </header>
         <main class="container-fluid">
             <div class="row">
                 <div class="col-lg-1 col-md-0"></div>
-                <div class="col-lg-6 col-md-7">
+                <div class="col-lg-6 col-md-7 col-sm-12">
                     <iframe
                         src="https://www.chatbase.co/chatbot-iframe/7gGthDjTino7LSeWfmX0X"
                         frameborder="0" class="chatbot"
                     ></iframe>
                 </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="iframe-container desktop">
-                        <!--<p class="text">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <div class="iframe-container">
+                        <!--<p class="text-bold">
                             Este chatbot con Inteligencia Artificial funciona a través de una plataforma externa que tiene unos costes de mantenimiento. 
                             Si quieres apoyarnos con estos costes, puedes hacerlo donando aquí:
                         </p>-->
-                        <iframe id="kofiframe" class="desktop" src="https://ko-fi.com/ayudaciudadana/?hidefeed=true&widget=true&embed=true&preview=true" 
-                            style=""
-                            title="ayudaciudadana">
-                        </iframe>
+                        <iframe id="kofiframe" src="https://ko-fi.com/ayudaciudadana/?hidefeed=true&widget=true&embed=true&preview=true" title="ayudaciudadana"></iframe>
                     </div>
                 </div>
 
             </div>
             <div class="row desktop">
-                <div class="banner desktop">
-                    <h4>¿Cómo funciona el asistente?</h4>
-                    <ol>
-                        <li><b>Describe tu situación o necesidad específica.</b> Por ejemplo: “Busco transporte público en Valencia” o “¿Qué ayudas hay para agricultores afectados?”</li>
-                        <li><b>Recibe información detallada.</b> El asistente te proporcionará contactos, direcciones, enlaces o recomendaciones prácticas según tu caso.</li>
-                        <li><b>Consulta recursos adicionales.</b> Si necesitas algo más, puedes preguntar por alternativas o detalles adicionales.</li>
-                    </ol>
-                    <h4>Consejos para obtener mejores respuestas</h4>
-                    <ul>
-                        <li><b>Proporciona detalles específicos:</b> Si mencionas tu ubicación o tipo de ayuda que buscas, el asistente podrá ofrecer recursos más útiles.</li>
-                        <li>Ten en cuenta que el asistente <b>no puede proporcionar información muy cambiante en tiempo real</b>; en lugar de ello, redirigirá a plataformas web, grupos de whatsapp o de otra índole donde consultar esta información</li>
-                    </ul>
+                <div class="text-container desktop">
+                    <p class="text-bold">Hemos creado esta web para poder preguntar al asistente de Inteligencia Artificial sin la necesidad de registrarse en otras plataformas, manteniendo así la total privacidad y su acceso para todo tipo de personas. Esto se consigue a través de una plataforma externa que tiene unos costes de mantenimiento. 
+                        Si quieres apoyarnos con estos costes, puedes hacerlo <a href="https://ko-fi.com/ayudaciudadana" target="_blank">donando aquí</a> o desde el banner de la derecha.</p>
                     <p>Si lo prefieres, puedes seguir usando el asistente de forma totalmente gratuita en la plataforma de <a href="https://chatgpt.com/g/g-673082800a448190bd45a16e20c4fab5-ayuda-ciudadana">chatGPT</a>.</p>
+                    
                 </div>
             </div>
             <div class="row mobile">
-                <div class="col-12 text-center">
-                    <a class="btn btn-primary nav-link" href="info.html">Más información</a>
+                <div class="text-container mobile">
+                    <p class="text-bold">Hemos creado esta web para poder preguntar al asistente de Inteligencia Artificial sin la necesidad de registrarse en otras plataformas, manteniendo así la total privacidad y su acceso para todo tipo de personas. Esto se consigue a través de una plataforma externa que tiene unos costes de mantenimiento. 
+                        Si quieres apoyarnos con estos costes, puedes hacerlo <a href="https://ko-fi.com/ayudaciudadana" target="_blank">donando aquí</a> o desde el banner habilitado para ello.</p>
+                    <p>Si lo prefieres, puedes seguir usando el asistente de forma totalmente gratuita en la plataforma de <a href="https://chatgpt.com/g/g-673082800a448190bd45a16e20c4fab5-ayuda-ciudadana">chatGPT</a>.</p>
                 </div>
             </div>
+            <!--<div class="row mobile">
+                <div class="col-12 text-center">
+                    <a class="btn btn-primary nav-link" href="info.html">¿Cómo funciona?</a>
+                </div>
+            </div>--><div class="cookie-consent" id="cookieConsent">
+        <p>Este sitio web utiliza cookies de terceros para mejorar la experiencia del usuario. <a href="privacy.html" target="_blank" style="color: #fff; text-decoration: underline;">Más información</a>.
+            <button class="btn btn-primary" onclick="acceptCookies()">Aceptar</button></p>
+        </div>
+        <script>
+            function acceptCookies() {
+                document.getElementById('cookieConsent').style.display = 'none';
+                // Aquí puedes añadir el código para almacenar la aceptación de cookies en localStorage o cookies
+            }
+        </script>
         </main>
         <footer>
             <p>&copy; 2025 Ayuda CiudaDANA</p>

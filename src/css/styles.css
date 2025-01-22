@@ -73,13 +73,21 @@ main {
     overflow-y: auto;
 }
 
-.banner {
+.text-container {
     background-color: #ffffff;
     padding: 20px; 
     color: #3A65BD;
     font-size: 1.0rem;
 }
 
+.btn-spacing {
+    margin-right: 10px; /* Ajusta el valor según sea necesario */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
 .btn {
     background-color: #3A65BD;
 }
@@ -113,13 +121,12 @@ main {
 }
 
 
-.text {
+.text-bold {
     color: #3A65BD;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.0rem; 
 }
-
 
 .doc {
     width: 100%;
@@ -128,15 +135,6 @@ main {
     background-color: #ffffff;
 }
 
-.gfm-embed {
-    background-color: #ffffff;
-    max-height: fit-content;
-    border:none;
-    width:100%;
-    padding:4px;
-    background:#ffffff;
-    height:100%;
-}
 
 footer {
     background-color: #3A65BD;
@@ -175,6 +173,30 @@ footer a:hover {
     height: 24px; /* Ajusta el tamaño según tus necesidades */
 }
 
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left:10%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+.cookie-consent p {
+    margin: 0;
+    padding: 0;
+}
+.cookie-consent a {
+    color: #fff;
+    text-decoration: underline;
+}
+.cookie-consent button {
+    margin-left: 10px;
+    background-color: #3A65BD;
+}
+
 /* Media query to hide elements on mobile */
 @media (max-width: 768px) {
     .desktop {
@@ -187,6 +209,16 @@ footer a:hover {
     .chatbot {
         height: 85vh;
         min-height: 700px;
+    }
+    .cookie-consent {
+        padding: 10px 0px;
+        left:0;
+        width: 100%;
+    }
+    .cookie-consent button {
+        margin-top: 10px;
+        display: inline;
+        width: fit-content;
     }
 }
 
@@ -205,7 +237,8 @@ footer a:hover {
         gap: 10px;
     }
     .iframe-container {
-        min-height: 660px;
+        padding-top: 5%;
+        min-height: 550px;
     }
 }
 
