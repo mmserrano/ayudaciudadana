@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 10px;
     background-color: #ffffff;
-    color: #3A65BD;
+    color: #0F483F;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,8 +23,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #3A65BD;
-    color: #3A65BD;
+    background-color: #0F483F;
+    color: #0F483F;
     padding: 10px 10px;
     box-sizing: border-box;
 }
@@ -65,6 +65,16 @@ nav ul li a {
     font-size:medium;
 }
 
+.nav-link:hover {
+    color: #59A897 
+}
+.text-link {
+    color: #59A897 
+}
+.text-link:hover {
+    color: #0F483F; 
+}
+
 main {
     flex-grow: 1;
     padding: 20px;
@@ -76,7 +86,7 @@ main {
 .text-container {
     background-color: #ffffff;
     padding: 20px; 
-    color: #3A65BD;
+    color: #0F483F;
     font-size: 1.0rem;
 }
 
@@ -89,9 +99,13 @@ main {
     justify-content: center;
 }
 .btn {
-    background-color: #3A65BD;
+    background-color: #0F483F;
+    border:none;
 }
-
+a.btn:focus {
+    background-color: #0F483F;
+    color: #59A897;
+}
 .chatbot {
     width: 100%;
     height: 85vh;
@@ -122,7 +136,7 @@ main {
 
 
 .text-bold {
-    color: #3A65BD;
+    color: #0F483F;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.0rem; 
@@ -137,7 +151,7 @@ main {
 
 
 footer {
-    background-color: #3A65BD;
+    background-color: #0F483F;
     color: #ffffff;
     text-align: center;
     padding: 10px 0px;
@@ -194,7 +208,11 @@ footer a:hover {
 }
 .cookie-consent button {
     margin-left: 10px;
-    background-color: #3A65BD;
+    border:none;
+    background-color: #59A897;
+}
+.cookie-consent button:hover {
+    background-color: #0F483F;
 }
 
 /* Media query to hide elements on mobile */
