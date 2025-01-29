@@ -9,9 +9,11 @@ try {
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
     $mail->isHTML(true);
-    $mail->Host = "smtp.ayudaciudadana.info";
+    $mail->Host = "smtp.servidor-correo.net";
+    $mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
     $mail->Username = "contacto@ayudaciudadana.info";
-    $mail->Password = "password"; 
+    $mail->Password = "MT*h4S+Eg+gQCYe"; 
 
     // Remitente y destinatario
     $mail->setFrom($email, 'Ayuda CiudaDANA');
