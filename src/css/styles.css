@@ -1,17 +1,20 @@
+/* Reset margins for core elements */
 html, body {
     margin: 0;
     padding: 0;
-}
-header, footer {
     width: 100%;
+    overflow-x: hidden;
+}
+
+header, footer {
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 10px;
+    padding: 0;
     background-color: #ffffff;
     color: #0F483F;
     display: flex;
@@ -43,7 +46,7 @@ header h1 {
 }
 
 h4 {
-    font-size: 1.2rem; /* Ajusta el tamaño según tus necesidades */
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -81,6 +84,8 @@ main {
     box-sizing: border-box;
     background-color: #ffffff;
     overflow-y: auto;
+    width: 100%;
+    margin: 0;
 }
 
 .text-container {
@@ -91,7 +96,7 @@ main {
 }
 
 .btn-spacing {
-    margin-right: 10px; /* Ajusta el valor según sea necesario */
+    margin-right: 10px;
 }
 
 .btn-container {
@@ -120,7 +125,7 @@ a.btn:focus {
     width: 100%;
     height: 100%;
     min-height: 600px;
-    padding-bottom: 56.25%; /* Aspect ratio para mantener el iframe responsivo */
+    padding-bottom: 56.25%;
     overflow:hidden;
     align-items: center;
 }
@@ -133,7 +138,6 @@ a.btn:focus {
     border:none;
     overflow: hidden;
 }
-
 
 .text-bold {
     color: #0F483F;
@@ -148,7 +152,6 @@ a.btn:focus {
     border-radius: 8px;
     background-color: #ffffff;
 }
-
 
 footer {
     background-color: #0F483F;
@@ -183,8 +186,8 @@ footer a:hover {
 }
 
 .social-icon {
-    width: 24px; /* Ajusta el tamaño según tus necesidades */
-    height: 24px; /* Ajusta el tamaño según tus necesidades */
+    width: 24px;
+    height: 24px;
 }
 
 .cookie-consent {
@@ -251,7 +254,7 @@ footer a:hover {
     }
     .social-icons {
         display: grid;
-        grid-template-columns: repeat(2, auto); /* Dos columnas */
+        grid-template-columns: repeat(2, auto);
         gap: 10px;
     }
     .iframe-container {
