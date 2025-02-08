@@ -12,12 +12,12 @@ try {
     $mail->Host = "smtp.servidor-correo.net";
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = "contacto@ayudaciudadana.info";
-    $mail->Password = "MT*h4S+Eg+gQCYe"; 
+    $mail->Username = "email@smtpemail";
+    $mail->Password = "**********"; 
 
     // Remitente y destinatario
     $mail->setFrom($email, 'Ayuda CiudaDANA');
-    $mail->addAddress('ayudaciudadana.ia@gmail.com');
+    //$mail->addAddress('ayudaciudadana.ia@gmail.com');
 
     // Contenido del correo
     //$mail->isHTML(false);
