@@ -1,7 +1,7 @@
 # ayudaciudadana
 
 ## Project Overview
-The "ayudaciudadana" project is a web application designed to provide assistance and resources to citizens. This documentation outlines the project's structure, setup instructions, and usage.
+The "ayudaciudaDANA" project is a web application designed to provide assistance and resources to affected, volunteers or any kind of person interested on collaborating by DANA in Valencia, using AI tools. This documentation outlines the project's structure, setup instructions, and usage.
 
 ## Project Structure
 ```
