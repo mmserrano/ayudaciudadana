@@ -218,6 +218,47 @@ footer a:hover {
     background-color: #0F483F;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.8); /* Same background color as cookie-consent */
+    color: #fff; /* Same text color as cookie-consent */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
+    position: relative;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #59A897;
+    position: absolute;
+    left: -35px; /* Move to the left of the modal */
+    top: -15px; /* Move above the modal */
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #0F483F;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /* Media query to hide elements on mobile */
 @media (max-width: 768px) {
     .desktop {
