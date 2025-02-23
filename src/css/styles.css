@@ -95,6 +95,18 @@ main {
     font-size: 1.0rem;
 }
 
+.text-container a {
+    color: #59A897; /* Same color as text-container */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Add underline to indicate it's a link */
+  }
+  
+  .text-container a:hover,
+  .text-container a:focus {
+    color: #0F483F; /* Change color on hover/focus */
+    text-decoration: underline; /* Ensure underline remains on hover/focus */
+  }
+
 .btn-spacing {
     margin-right: 10px;
 }
@@ -246,8 +258,8 @@ footer a:hover {
   .close {
     color: #59A897;
     position: absolute;
-    left: -35px; /* Move to the left of the modal */
-    top: -15px; /* Move above the modal */
+    right: 15px; /* Move to the right of the modal */
+    top: 15px; /* Move to the top of the modal */
     font-size: 28px;
     font-weight: bold;
   }
@@ -258,6 +270,16 @@ footer a:hover {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .modal-content button {
+    margin-right: 10px;
+    border:none;
+    background-color: #59A897;
+    float: right;
+}
+.modal-content button:hover {
+    background-color: #0F483F;
+}
 
 /* Media query to hide elements on mobile */
 @media (max-width: 768px) {

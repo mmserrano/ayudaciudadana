@@ -36,6 +36,8 @@
                     ></iframe>
                 </div>
             <div class="col-lg-4 col-md-3 com-sm-12 text-container">
+                <p>Si experimentas algún tipo de problema o límite de uso con este chat, puedes consultar desde la plataforma de <a href="https://chatgpt.com/g/g-673082800a448190bd45a16e20c4fab5-ayuda-ciudadana">ChatGPT</a><br>Solo tendrás que suscribirte si no lo estás, o acceder con tu email o cuenta de google.
+            
                 <h4>¿Cómo funciona el asistente?</h4>
                 <ol>
                     <li><b>Describe tu situación o necesidad específica.</b> Por ejemplo: “Busco transporte público en Valencia” o “¿Qué ayudas hay para agricultores afectados?”</li>
@@ -61,11 +63,11 @@
         <p>Este sitio web utiliza cookies de terceros para mejorar la experiencia del usuario. <a href="privacy.html" target="_blank" style="color: #fff; text-decoration: underline;">Más información</a>
             <button class="btn btn-primary" onclick="acceptCookies()">Aceptar</button></p>
         </div>
-
         <div id="myModal" class="modal">
-            <span class="close">&times;</span>
             <div class="modal-content">
-            <p>Si experimentas algún tipo de problema o límite de uso con este chat, puedes consultar desde la plataforma de <a style="color: #59A897;" href="https://chatgpt.com/g/g-673082800a448190bd45a16e20c4fab5-ayuda-ciudadana">ChatGPT</a><br>Solo tendrás que suscribirte si no lo estás, o acceder con tu email o cuenta de google.</p>
+                <span class="close">&times;</span>
+            <p>Si experimentas algún tipo de problema o límite de uso con este chat, puedes consultar desde la plataforma de <a style="color: #59A897;" href="https://chatgpt.com/g/g-673082800a448190bd45a16e20c4fab5-ayuda-ciudadana">ChatGPT</a><br>Solo tendrás que suscribirte si no lo estás, o acceder con tu email o cuenta de google.
+            <!--<button class="btn btn-primary" onclick="closeModal()">Cerrar</button></p>-->
             </div>
         </div>
         <script>
@@ -77,6 +79,9 @@
             // Get the modal
             var modal = document.getElementById("myModal");
 
+            function closeModal() {
+                modal.style.display = "none";
+            }
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
 
@@ -95,7 +100,7 @@
             // Show the modal after 5 seconds
             setTimeout(function() {
                 modal.style.display = "block";
-            }, 5000);
+            }, 60000);
         </script>
         </main>
         <footer>
